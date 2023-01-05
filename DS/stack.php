@@ -55,7 +55,7 @@ print_r($stack);
 echo "Lấy một số phần tử ra khỏi Stack:". "\n";
 echo $stack->pop()."\n";
 echo $stack->pop()."\n";
-
+print_r($stack);
 echo "Lấy phần tử trên cùng của Stack:". "\n";
 echo $stack->top()."\n";
 

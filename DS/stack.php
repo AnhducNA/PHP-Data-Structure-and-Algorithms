@@ -28,7 +28,7 @@ class stack
             // trap for stack underflow
             throw new RunTimeException('Stack is empty!');
         } else {
-            // pop item from the start of the array
+            // lấy phần tử từ đầu ngăn xếp
             return array_shift($this->stack);
         }
     }
@@ -43,9 +43,7 @@ class stack
 
 }
 
-/**
- * This'll work as expected.
- */
+//  Thêm một số phần tử vào trong Stack:
 $stack = new Stack();
 $stack->push(1);
 $stack->push(2);
@@ -54,7 +52,11 @@ $stack->push(4);
 $stack->push(5);
 print_r($stack);
 
-/**
- * And this too.
- */
-//$stack = new Stack(3, array(1, 2, 3, 4, 5));
+echo "Lấy một số phần tử ra khỏi Stack:". "\n";
+echo $stack->pop()."\n";
+echo $stack->pop()."\n";
+
+echo "Lấy phần tử trên cùng của Stack:". "\n";
+echo $stack->top()."\n";
+
+
